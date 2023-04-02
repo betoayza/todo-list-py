@@ -3,8 +3,6 @@ from task import Task
 print("\nWellcome to TODO list in Python!")
 
 tasks_list = []
-# eliminar
-# editar
 
 is_running = True
 while is_running:
@@ -39,7 +37,7 @@ while is_running:
             task = Task(id_task, name, description, priority, state)
             tasks_list.append(task)
 
-            print("\nSuccesful!")
+            print("\Added succesfully!")
 
         elif option == 2:
             is_running_3 = True
@@ -76,8 +74,9 @@ while is_running:
                         print("\tTask not found :(\n\tTry other...\n")
                 except:
                     print("\tThat's not an option, ha! Try again...\n")
+       
         # print result
-        print("\nThe updated list is:")
+        print("\nThe updated list is:")        
         if len(tasks_list) == 0:
             print("\tList is empty :/")
         else:
@@ -86,4 +85,5 @@ while is_running:
 
     except:
         print("That's not an option, ha! Try again...")
+
 print("\nThanks for try TODO LIST PY!")
